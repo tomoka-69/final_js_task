@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>最終課題(タイピングゲーム)</title>
+    <style>
+        #outbox {
+            border: 1px solid black;
+            border-radius: 100px;
+            width: 1200px;
+            height: 200px;
+            text-align: center;
+            font-size: 30px;
+            background-color: floralwhite;
+            position: relative;
+            left: 100px;
+            top: 20px;
+        }
+        button{
+            width: 150px;
+            height: 50px;
+            text-align: center;
+            font-size: large;
+            border-radius: 20px;
+            transition: background-color 0.3s;
+        }
+        button:active {
+            background-color: darkgrey;
+            transform: scale(0.95);
+        }
+        #easy {
+            background-color: palegreen;
+        }
+        #easy:hover {
+            background-image: linear-gradient(90deg, palegreen 20%, aquamarine 35%, #8CFDB6 50%, aquamarine 65%, palegreen 80%);
+            background-size: 200% 150%;
+            background-position: 150% 50%;
+            transition: background-position 0.5s;
+        }
+        #normal {
+            background-color: paleturquoise;
+        }
+        #normal:hover {
+            background-image: linear-gradient(90deg, paleturquoise 20%, LavenderBlush 35%, #D7EFF2 50%, LavenderBlush 65%, paleturquoise 80%);
+            background-size: 200% 150%;
+            background-position: 150% 50%;
+            transition: background-position 0.5s;
+        }
+        #hard {
+            background-color: mistyrose;
+        }
+        #hard:hover {
+            background-image: linear-gradient(90deg, mistyrose 20%, #C7F9C7 35%, #E3EFD4 50%, #C7F9C7 65%, mistyrose 80%);
+            background-size: 200% 150%;
+            background-position: 150% 50%;
+            transition: background-position 0.5s;
+        }
+    </style>
+</head>
+<body>
+    <div id="outbox">
+        <p>難易度を選択してください</p>
+        <button id="easy">EASY</button>
+        <button id="normal">NORMAL</button>
+        <button id="hard">HARD</button>
+    </div>
+    <script type="text/javascript" src="final-prac.js"></script>
+</body>
+</html>
